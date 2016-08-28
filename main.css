@@ -34,3 +34,35 @@ body {
   padding: 10px;
   font-size: 110%;
 }
+
+.quote-box .buttons {
+  width: 450px;
+  margin: auto;
+  display: block;
+}
+
+.quote-box .buttons .button#tweet-quote, .quote-box .buttons .button#tumblr-quote {
+  float: left;
+  font-size: 100%;
+  text-align: center;
+  margin-right: 5px;
+  padding: 0px;
+  padding-top: 8px;
+  height: 30px;
+  width: 40px;
+}
+
+.quote-box .buttons .button {
+  color: #fff;
+  background-color: #333;
+  border-radius: 5px;
+  padding: 8px 18px 6px 18px;
+  font-size: 85%;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.quote-box .buttons .button:hover {
+  opacity: 0.9;
+}
+
