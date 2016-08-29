@@ -65,16 +65,17 @@ function getQuote() {
         }, 1000);
 
       // Button color animation
-      $("#new-quote").animate({
+      $(".button").animate({
         backgroundColor: colors[color]
       }, 1000);
-
 
     })
 }  
 
 $(document).ready(() => {
+
   getQuote();
+
   $("#new-quote").on("click", getQuote);
 
   $("#tweet-quote").on("click", function() {

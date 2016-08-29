@@ -1,8 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  vertical-align: baseline;
+}
 
 body {
   background-color: black;
   color: white;
   font-size: 100%;
+  font-weight: 400;  
 }
 
 .quote-box {
@@ -41,15 +48,10 @@ body {
   display: block;
 }
 
-.quote-box .buttons .button#tweet-quote, .quote-box .buttons .button#tumblr-quote {
-  float: left;
-  font-size: 100%;
+.quote-box .quote-text {
   text-align: center;
-  margin-right: 5px;
-  padding: 0px;
-  padding-top: 8px;
-  height: 30px;
-  width: 40px;
+  height: auto;
+  font-size: 175%;
 }
 
 .quote-box .buttons .button {
@@ -60,9 +62,23 @@ body {
   font-size: 85%;
   opacity: 1;
   cursor: pointer;
+  margin-top: 30px;
+  outline: none;
+  height: 38px;
+  border: none;
 }
 
 .quote-box .buttons .button:hover {
   opacity: 0.9;
 }
 
+.quote-box .buttons .button#tweet-quote, .quote-box .buttons .button#tumblr-quote {
+  float: left;
+  font-size: 100%;
+  text-align: center;
+  margin-right: 5px;
+  padding: 0px;
+  padding-top: 8px;
+  height: 30px;
+  width: 40px;
+}
