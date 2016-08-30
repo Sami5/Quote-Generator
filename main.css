@@ -10,11 +10,11 @@ body {
   color: white;
   font-size: 100%;
   font-weight: 400;  
+  font-family: "Raleway", sans-serif;
 }
 
 .quote-box {
   background-color: white;
-  color: black;
   position: relative;
   width: 400px;
   padding: 30px;
@@ -23,23 +23,10 @@ body {
   display: table;
 }
 
-.quote {
-  font-size: 120%;
-}
-
-.author {
+.quote-box .author {
   text-align: right;
+  font-size: 100%;
   margin: 20px 10px 20px 10px;
-}
-
-#new-quote {
-  float: right;
-  background-color: black;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
-  font-size: 110%;
 }
 
 .quote-box .buttons {
@@ -48,9 +35,10 @@ body {
   display: block;
 }
 
-.quote-box .quote-text {
-  text-align: center;
+.quote-box .quote {
   height: auto;
+  text-align: center;
+  font-weight: 500;
   font-size: 175%;
 }
 
@@ -66,6 +54,15 @@ body {
   outline: none;
   height: 38px;
   border: none;
+}
+
+.quote-box .buttons .button#new-quote {
+  float: right;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 110%;
 }
 
 .quote-box .buttons .button:hover {
