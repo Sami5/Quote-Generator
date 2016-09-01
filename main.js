@@ -47,16 +47,16 @@ function getQuote() {
       $("#tumblr-quote").attr('href', tumblrURL); 
 
       var color = ~~(Math.random() * colors.length);
-       
+
       // New quote animation
-      var quoteP = Promise.resolve(() => $(".quote").animate({opacity: 0}, 500))
+      var quoteP = $(".quote").animate({opacity: 0}, 500).promise()
         quoteP.then(() => $("#quote-text").text(quote))
         .then(() => $(".quote").animate({opacity: 1}, 500))
-        
+
         // New author animation
-        var authorP = Promise.resolve($(".author").animate({opacity: 0}, 500))
-        authorP.then($("#author-text").text(author))
-        .then($(".author").animate({opacity: 1}, 500))
+        var authorP = $(".author").animate({opacity: 0}, 500).promise()
+        authorP.then(() => $("#author-text").text(author))
+        .then(() => $(".author").animate({opacity: 1}, 500))
 
         // Background colour animation
         $("html body").animate({
